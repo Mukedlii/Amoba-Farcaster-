@@ -8,8 +8,6 @@ export default function handler(req, res) {
 <head>
   <meta charset="UTF-8" />
   <meta property="og:title" content="Amőba" />
-  <meta property="og:image" content="${imageUrl}" />
-
   <meta name="fc:frame" content="vNext" />
   <meta name="fc:frame:image" content="${imageUrl}" />
 
@@ -19,7 +17,7 @@ export default function handler(req, res) {
     <meta name="fc:frame:button:${i}:post_url" content="https://amoba-farcaster.vercel.app/api/move" />
   `).join("")}
 </head>
-<body></body>
 </html>
   `);
 }
+
