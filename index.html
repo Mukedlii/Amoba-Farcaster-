@@ -3,19 +3,38 @@
 <head>
   <meta charset="UTF-8" />
 
-  <!-- Kötelező: Farcaster Frame bekapcsolása -->
+  <!-- Farcaster Frame -->
   <meta name="fc:frame" content="vNext" />
 
-  <!-- A kép, amit a Farcaster mutat -->
-  <meta name="fc:frame:image" content="https://yourdomain.com/image.png" />
+  <!-- Alap amőba tábla kép -->
+  <meta name="fc:frame:image" content="https://raw.githubusercontent.com/Mukedlii/Amoba-Farcaster-/main/board0.png" />
 
-  <!-- A gombok -->
-  <meta name="fc:frame:button:1" content="Start" />
-  
-  <title>My Farcaster Frame</title>
+  <!-- 9 gomb: 3x3 mező -->
+  <meta name="fc:frame:button:1" content="1" />
+  <meta name="fc:frame:button:2" content="2" />
+  <meta name="fc:frame:button:3" content="3" />
+  <meta name="fc:frame:button:4" content="4" />
+  <meta name="fc:frame:button:5" content="5" />
+  <meta name="fc:frame:button:6" content="6" />
+  <meta name="fc:frame:button:7" content="7" />
+  <meta name="fc:frame:button:8" content="8" />
+  <meta name="fc:frame:button:9" content="9" />
+
+  <!-- Minden gomb backendre mutat → majd megcsináljuk -->
+  <meta name="fc:frame:button:1:action" content="post" />
+  <meta name="fc:frame:button:2:action" content="post" />
+  <meta name="fc:frame:button:3:action" content="post" />
+  <meta name="fc:frame:button:4:action" content="post" />
+  <meta name="fc:frame:button:5:action" content="post" />
+  <meta name="fc:frame:button:6:action" content="post" />
+  <meta name="fc:frame:button:7:action" content="post" />
+  <meta name="fc:frame:button:8:action" content="post" />
+  <meta name="fc:frame:button:9:action" content="post" />
+
+  <title>Amőba Frame</title>
 </head>
 <body>
-  <h1>This is a Farcaster Frame</h1>
-  <p>aIf you see this text, you opened the page in a browser — not Farcaster.</p>
+  <h1>Amőba Frame</h1>
+  <p>If you see this, you're outside Farcaster.</p>
 </body>
 </html>
