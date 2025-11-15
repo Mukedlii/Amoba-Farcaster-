@@ -1,11 +1,13 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "api/move.js", "use": "@vercel/node" }
+    { "src": "api/frame.js", "use": "@vercel/node" },
+    { "src": "api/move.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "^/api/frame", "dest": "api/frame.js" },
     { "src": "^/api/move", "dest": "api/move.js" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/.*", "dest": "index.html" }
   ]
 }
